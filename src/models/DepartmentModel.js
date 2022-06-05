@@ -9,6 +9,10 @@ module.exports = (sequelize, Datatypes)=>{
         },
         department_name:{
             type:Datatypes.STRING
+        },
+        Icon:{
+            type:Datatypes.STRING,
+            allowNull:false   
         }
     })
 

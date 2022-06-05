@@ -18,6 +18,10 @@ module.exports = (sequelize, Datatypes)=>{
         employee_password:{
             type:Datatypes.STRING,
             allowNull:false
+        },
+        Icon:{
+            type:Datatypes.INTEGER,
+            allowNull:false
         }
     })
     
