@@ -10,7 +10,7 @@ app.use(express.json());
 app.use('/employee',employeeRouter);
 app.use('/department',departmentRouter);
 
-
+const path = require('path');
 const PORT = process.env.PORT;
 app.listen(PORT,(error)=>{
     if(error) throw error;
