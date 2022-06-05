@@ -1,4 +1,4 @@
-const employee = require('../model/EmployeeModel');
+
 
 module.exports = (sequelize, Datatypes)=>{
     const Department = sequelize.define('Department',{

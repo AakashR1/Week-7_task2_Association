@@ -22,8 +22,8 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.employee = require('../model/EmployeeModel.js')(sequelize,DataTypes);
-db.department = require('../model/DepartmentModel.js')(sequelize,DataTypes);
+db.employee = require('../models/EmployeeModel.js')(sequelize,DataTypes);
+db.department = require('../models/DepartmentModel.js')(sequelize,DataTypes);
 
 db.sequelize.sync({force:false})
 .then(()=>{
